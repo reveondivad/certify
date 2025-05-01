@@ -1,0 +1,3423 @@
+[
+    {
+        "challenge_id": "09-Letter-Soup",
+        "title": "Letter Soup Challenge",
+        "category": "Text Processing",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a string of letters, count the occurrences of a specified character. Some questions may involve case sensitivity or transformations.",
+        "data": {
+            "letter_sequences": [
+                "uzTyjLmnfIqULrWCoArlPvoLzKNVCzTpIMoltrEnLcDpS"
+            ],
+            "target_characters": [
+                "L"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "How many times does the displayed 'Character' appear in the given text?",
+                "input_data": {
+                    "text": "uzTyjLmnfIqULrWCoArlPvoLzKNVCzTpIMoltrEnLcDpS",
+                    "character": "L",
+                    "case_sensitive": true
+                },
+                "expected_answer": 4
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the sum of the odd answers from Question Set 1?",
+                "expected_answer": 12
+            }
+        ]
+    },
+    {
+        "challenge_id": "06-Mortal-Wombat",
+        "title": "Mortal Wombat Move Simulation",
+        "category": "Game Simulation",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a sequence of moves, compute the total damage based on the opponent's defenses.",
+        "data": {
+            "move_list": [
+                {
+                    "move": "P",
+                    "damage": 1,
+                    "negated_by": [
+                        "Block",
+                        "Duck"
+                    ]
+                },
+                {
+                    "move": "K",
+                    "damage": 2,
+                    "negated_by": [
+                        "Block",
+                        "Jump",
+                        "Duck"
+                    ]
+                },
+                {
+                    "move": "T",
+                    "damage": 1,
+                    "negated_by": [
+                        "Duck"
+                    ]
+                }
+            ],
+            "opponent_defense": [
+                "Block",
+                "Jump"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total damage inflicted given the opponent's defenses?",
+                "expected_answer": 2
+            }
+        ]
+    },
+    {
+        "challenge_id": "05-Sleep-as-a-Sport",
+        "title": "Sleep as a Sport Challenge",
+        "category": "Statistical Analysis",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze sleep data, calculate efficiency, and compare athletes\u2019 sleep performance.",
+        "data": {
+            "sleep_records": [
+                {
+                    "athlete": "John Doe",
+                    "total_sleep_hours": 6.5,
+                    "deep_sleep_hours": 2.1
+                },
+                {
+                    "athlete": "Jane Smith",
+                    "total_sleep_hours": 7.2,
+                    "deep_sleep_hours": 3.0
+                }
+            ],
+            "performance_metrics": [
+                "Sleep Efficiency",
+                "Recovery Index"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the sleep efficiency percentage for John Doe?",
+                "input_data": {
+                    "total_sleep_hours": 6.5,
+                    "deep_sleep_hours": 2.1
+                },
+                "expected_answer": 32.3
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which athlete had the highest sleep efficiency?",
+                "expected_answer": "Jane Smith"
+            }
+        ]
+    },
+    {
+        "challenge_id": "R1-Run-Forrest-Run",
+        "title": "Run Forrest Run Challenge",
+        "category": "Time Series Analysis",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a dataset of runner times, analyze their performance trends, compute moving averages, and predict future times.",
+        "data": {
+            "runner_times": [
+                {
+                    "runner": "Forrest Gump",
+                    "times": [
+                        12.4,
+                        11.8,
+                        12.1,
+                        11.9,
+                        12.0
+                    ]
+                },
+                {
+                    "runner": "John Doe",
+                    "times": [
+                        13.1,
+                        12.9,
+                        13.3,
+                        12.8,
+                        13.0
+                    ]
+                }
+            ],
+            "metrics": [
+                "Moving Average",
+                "Pace Consistency"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the 3-run moving average for Forrest Gump's times?",
+                "input_data": {
+                    "times": [
+                        12.4,
+                        11.8,
+                        12.1,
+                        11.9,
+                        12.0
+                    ],
+                    "window_size": 3
+                },
+                "expected_answer": [
+                    12.1,
+                    11.93,
+                    12.0
+                ]
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which runner has the most consistent pace?",
+                "expected_answer": "John Doe"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Square-of-Fortune",
+        "title": "Square of Fortune Challenge",
+        "category": "Game Strategy",
+        "difficulty": "Advanced",
+        "problem_statement": "Players compete on a square grid, taking strategic moves to optimize their score. Given game states, determine the best next move.",
+        "data": {
+            "grid": [
+                [
+                    5,
+                    3,
+                    2,
+                    4
+                ],
+                [
+                    1,
+                    7,
+                    6,
+                    3
+                ],
+                [
+                    8,
+                    2,
+                    9,
+                    5
+                ],
+                [
+                    4,
+                    6,
+                    3,
+                    7
+                ]
+            ],
+            "player_positions": {
+                "Player 1": [
+                    0,
+                    0
+                ],
+                "Player 2": [
+                    3,
+                    3
+                ]
+            },
+            "move_options": [
+                "Up",
+                "Down",
+                "Left",
+                "Right"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the best next move for Player 1 to maximize score?",
+                "input_data": {
+                    "player_position": [
+                        0,
+                        0
+                    ],
+                    "grid": [
+                        [
+                            5,
+                            3,
+                            2,
+                            4
+                        ],
+                        [
+                            1,
+                            7,
+                            6,
+                            3
+                        ],
+                        [
+                            8,
+                            2,
+                            9,
+                            5
+                        ],
+                        [
+                            4,
+                            6,
+                            3,
+                            7
+                        ]
+                    ]
+                },
+                "expected_answer": "Down"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If Player 2 moves left, what is their new score?",
+                "input_data": {
+                    "player_position": [
+                        3,
+                        3
+                    ],
+                    "move": "Left"
+                },
+                "expected_answer": 3
+            }
+        ]
+    },
+    {
+        "challenge_id": "Ludo",
+        "title": "Ludo Game Strategy",
+        "category": "Game Theory",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a Ludo board state, determine the best possible move for a player to maximize their chances of winning.",
+        "data": {
+            "board_state": "A grid representing the positions of all player pieces",
+            "dice_roll": 5
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the best move for Player 1 given the board state and dice roll?",
+                "expected_answer": "Move piece at (2,3) forward by 5 spaces."
+            }
+        ]
+    },
+    {
+        "challenge_id": "Share-the-Ride",
+        "title": "Carpool Optimization",
+        "category": "Logistics Optimization",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a list of ride requests, destinations, and driver availability, optimize the route to minimize total travel distance.",
+        "data": {
+            "ride_requests": [
+                {
+                    "passenger": "Alice",
+                    "pickup": "A",
+                    "dropoff": "C"
+                },
+                {
+                    "passenger": "Bob",
+                    "pickup": "B",
+                    "dropoff": "D"
+                }
+            ],
+            "driver_availability": [
+                "Driver 1",
+                "Driver 2"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which driver should pick up Alice to minimize travel distance?",
+                "expected_answer": "Driver 1"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total optimized route distance?",
+                "expected_answer": 15.4
+            }
+        ]
+    },
+    {
+        "challenge_id": "Tripeaks",
+        "title": "Tripeaks Card Game Strategy",
+        "category": "Game Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a card layout in the Tripeaks game, determine the best sequence of moves to clear the most cards.",
+        "data": {
+            "card_layout": "A pyramid structure of face-up and face-down cards",
+            "available_moves": [
+                "5 of Hearts",
+                "7 of Diamonds"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which card should be played first to maximize the number of cleared cards?",
+                "expected_answer": "5 of Hearts"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Knights-and-Warriors",
+        "title": "Battlefield Tactics",
+        "category": "Military Simulation",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a battlefield layout and unit positions, determine the best tactical move for victory.",
+        "data": {
+            "unit_positions": {
+                "Knight A": [
+                    2,
+                    3
+                ],
+                "Warrior B": [
+                    4,
+                    5
+                ]
+            },
+            "enemy_positions": {
+                "Enemy X": [
+                    3,
+                    4
+                ],
+                "Enemy Y": [
+                    5,
+                    6
+                ]
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which unit should attack first to maximize battlefield advantage?",
+                "expected_answer": "Knight A"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Biathlon",
+        "title": "Biathlon Performance Analysis",
+        "category": "Sports Data Analysis",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze biathlon race results to determine the best-performing athlete.",
+        "data": {
+            "athlete_results": [
+                {
+                    "athlete": "John",
+                    "shooting_score": 92,
+                    "ski_time": "28:15"
+                },
+                {
+                    "athlete": "Mary",
+                    "shooting_score": 89,
+                    "ski_time": "27:50"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which athlete had the best combined performance?",
+                "expected_answer": "Mary"
+            }
+        ]
+    },
+    {
+        "challenge_id": "The-Gambler",
+        "title": "Probability and Betting Strategy",
+        "category": "Statistical Analysis",
+        "difficulty": "Advanced",
+        "problem_statement": "Given betting odds and a player's bankroll, calculate the best bet strategy to maximize winnings.",
+        "data": {
+            "betting_odds": [
+                2.5,
+                1.8,
+                3.2
+            ],
+            "player_bankroll": 100
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which bet offers the best risk-adjusted return?",
+                "expected_answer": "3.2 odds"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Mr-Odd",
+        "title": "Number Analysis Challenge",
+        "category": "Mathematical Reasoning",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a list of numbers, identify patterns and apply transformations.",
+        "data": {
+            "numbers": [
+                12,
+                15,
+                22,
+                37,
+                41,
+                56,
+                78
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "How many odd numbers are in the dataset?",
+                "expected_answer": 3
+            }
+        ]
+    },
+    {
+        "challenge_id": "Ludo-Challenge",
+        "title": "Ludo Game Strategy",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Four players compete in a Ludo board game. Given the game state and dice rolls, determine the best move strategy to maximize the chances of winning.",
+        "data": {
+            "player_positions": {
+                "Player 1": [
+                    2,
+                    3
+                ],
+                "Player 2": [
+                    5,
+                    6
+                ],
+                "Player 3": [
+                    8,
+                    9
+                ],
+                "Player 4": [
+                    11,
+                    12
+                ]
+            },
+            "dice_rolls": [
+                3,
+                6,
+                2,
+                5
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which player has the highest probability of reaching home first based on their position and dice rolls?",
+                "expected_answer": "Player 2"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If Player 3 rolls a 6, which token should they move to maximize their strategy?",
+                "expected_answer": "Token at position 8"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Share-the-Ride",
+        "title": "Share the Ride Optimization",
+        "category": "Logistics & Optimization",
+        "difficulty": "Advanced",
+        "problem_statement": "Given multiple passengers and their respective destinations, optimize the ride-sharing routes to minimize total travel time.",
+        "data": {
+            "passenger_locations": {
+                "Passenger 1": "Downtown",
+                "Passenger 2": "Suburbs",
+                "Passenger 3": "Airport"
+            },
+            "driver_start_location": "Downtown",
+            "destination": "City Center"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the optimal route to minimize total distance traveled while picking up all passengers?",
+                "expected_answer": [
+                    "Downtown \u2192 Airport \u2192 Suburbs \u2192 City Center"
+                ]
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which passenger should be picked up first to minimize travel time?",
+                "expected_answer": "Passenger 3 (Airport)"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Tripeaks",
+        "title": "Tripeaks Card Game",
+        "category": "Game Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Players need to clear a pyramid of cards by matching them with an open stack. The goal is to determine the optimal play sequence to clear the most cards.",
+        "data": {
+            "card_pyramid": [
+                [
+                    "4",
+                    "5",
+                    "6"
+                ],
+                [
+                    "7",
+                    "8"
+                ],
+                [
+                    "9"
+                ]
+            ],
+            "stack_top_card": "7"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which card should be played first from the pyramid to maximize clearing efficiency?",
+                "expected_answer": "6"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the optimal move sequence to clear the most cards?",
+                "expected_answer": [
+                    "6 \u2192 7 \u2192 8"
+                ]
+            }
+        ]
+    },
+    {
+        "challenge_id": "Knights-and-Warriors",
+        "title": "Knights and Warriors Battle Simulation",
+        "category": "Game Strategy",
+        "difficulty": "Advanced",
+        "problem_statement": "Knights and warriors battle based on attack strengths and defense values. Given an enemy formation, determine the best attack strategy.",
+        "data": {
+            "player_units": [
+                {
+                    "type": "Knight",
+                    "attack": 8,
+                    "defense": 6
+                },
+                {
+                    "type": "Warrior",
+                    "attack": 7,
+                    "defense": 5
+                }
+            ],
+            "enemy_units": [
+                {
+                    "type": "Orc",
+                    "attack": 6,
+                    "defense": 4
+                },
+                {
+                    "type": "Troll",
+                    "attack": 9,
+                    "defense": 7
+                }
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which unit should attack first to maximize damage?",
+                "expected_answer": "Knight"
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which enemy should be targeted first for an effective strategy?",
+                "expected_answer": "Troll"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Biathlon",
+        "title": "Biathlon Race Simulation",
+        "category": "Sports Analytics",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze race times and shooting accuracy of biathlon competitors to predict the winner.",
+        "data": {
+            "competitors": [
+                {
+                    "name": "Athlete A",
+                    "race_time": 32.5,
+                    "accuracy": 85
+                },
+                {
+                    "name": "Athlete B",
+                    "race_time": 33.1,
+                    "accuracy": 90
+                }
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Who is the most likely winner based on race time and shooting accuracy?",
+                "expected_answer": "Athlete A"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the accuracy difference between the two athletes?",
+                "expected_answer": 5
+            }
+        ]
+    },
+    {
+        "challenge_id": "The-Gambler",
+        "title": "The Gambler's Risk Analysis",
+        "category": "Probability & Statistics",
+        "difficulty": "Advanced",
+        "problem_statement": "Given different betting strategies, calculate expected returns and determine the optimal strategy.",
+        "data": {
+            "bets": [
+                {
+                    "type": "Low Risk",
+                    "payout": 1.5,
+                    "win_prob": 70
+                },
+                {
+                    "type": "High Risk",
+                    "payout": 4.0,
+                    "win_prob": 30
+                }
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which bet has the highest expected return?",
+                "expected_answer": "Low Risk"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If the gambler plays 10 rounds, what is the expected total payout from the High-Risk bet?",
+                "expected_answer": 12
+            }
+        ]
+    },
+    {
+        "challenge_id": "Odds-for-Mr-Odd",
+        "title": "The Odds for Mr. Odd",
+        "category": "Probability & Game Theory",
+        "difficulty": "Intermediate",
+        "problem_statement": "Players bet on odd or even numbers in a game where a dice is rolled. Determine the best betting strategy based on probability.",
+        "data": {
+            "dice_sides": 6,
+            "bet_options": [
+                "Odd",
+                "Even"
+            ],
+            "house_edge": 2.5
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the probability of rolling an odd number?",
+                "expected_answer": 50
+            },
+            {
+                "question_id": "Q2",
+                "text": "If a player bets 10 times on odd, how many wins can they expect on average?",
+                "expected_answer": 5
+            }
+        ]
+    },
+    {
+        "challenge_id": "Domino-Challenge",
+        "title": "Domino Tile Matching",
+        "category": "Puzzle & Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a set of domino tiles, determine the optimal way to arrange them to maximize matches.",
+        "data": {
+            "domino_tiles": [
+                {
+                    "left": 2,
+                    "right": 4
+                },
+                {
+                    "left": 4,
+                    "right": 5
+                },
+                {
+                    "left": 5,
+                    "right": 6
+                },
+                {
+                    "left": 1,
+                    "right": 3
+                }
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the longest chain of matching domino tiles that can be formed?",
+                "expected_answer": 3
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which tile should be placed first to maximize matches?",
+                "expected_answer": {
+                    "left": 2,
+                    "right": 4
+                }
+            }
+        ]
+    },
+    {
+        "challenge_id": "Lumberjack-Challenge",
+        "title": "Lumberjack Log Cutting",
+        "category": "Optimization",
+        "difficulty": "Advanced",
+        "problem_statement": "A lumberjack must cut logs of different lengths to fit into specified constraints while minimizing waste.",
+        "data": {
+            "log_lengths": [
+                10,
+                12,
+                15,
+                20
+            ],
+            "required_pieces": [
+                5,
+                7,
+                8
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the optimal way to cut the logs to minimize waste?",
+                "expected_answer": "Cut 15 into 7+8, 20 into 5+7+8"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total waste remaining after optimal cuts?",
+                "expected_answer": 2
+            }
+        ]
+    },
+    {
+        "challenge_id": "Card-Game",
+        "title": "Card Game Strategy",
+        "category": "Game Theory",
+        "difficulty": "Intermediate",
+        "problem_statement": "Players must decide the best strategy to win a turn-based card game by optimizing their moves.",
+        "data": {
+            "player_hand": [
+                "Ace",
+                "King",
+                "Queen"
+            ],
+            "opponent_hand": [
+                "Jack",
+                "10",
+                "9"
+            ],
+            "rules": "Higher card wins; if equal, draw again"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the best card to play first for the highest probability of winning?",
+                "expected_answer": "Ace"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If the player plays Queen and the opponent plays 10, who wins?",
+                "expected_answer": "Player"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Excelopolis",
+        "title": "Excelopolis City Planning",
+        "category": "Simulation",
+        "difficulty": "Advanced",
+        "problem_statement": "Given city data, determine the best way to allocate resources for maximum efficiency.",
+        "data": {
+            "zones": [
+                "Residential",
+                "Commercial",
+                "Industrial"
+            ],
+            "population": 50000,
+            "budget": 1000000
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the optimal percentage allocation for Residential, Commercial, and Industrial zones?",
+                "expected_answer": {
+                    "Residential": 50,
+                    "Commercial": 30,
+                    "Industrial": 20
+                }
+            },
+            {
+                "question_id": "Q2",
+                "text": "If 10% of the budget is allocated to roads, how much money remains?",
+                "expected_answer": 900000
+            }
+        ]
+    },
+    {
+        "challenge_id": "It-is-a-Snake",
+        "title": "Snake Game Simulation",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "A snake moves around a grid, avoiding obstacles and collecting food. Determine the optimal path to maximize survival.",
+        "data": {
+            "grid_size": [
+                10,
+                10
+            ],
+            "snake_position": [
+                5,
+                5
+            ],
+            "food_position": [
+                2,
+                2
+            ],
+            "obstacles": [
+                [
+                    4,
+                    4
+                ],
+                [
+                    6,
+                    6
+                ]
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the shortest path for the snake to reach the food?",
+                "expected_answer": [
+                    "Up",
+                    "Up",
+                    "Left",
+                    "Left"
+                ]
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many moves does the snake need to reach the food?",
+                "expected_answer": 4
+            }
+        ]
+    },
+    {
+        "challenge_id": "American-Bingo",
+        "title": "American Bingo Game",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "A bingo game is played with multiple players. Given a drawn set of numbers and player cards, determine the winner.",
+        "data": {
+            "drawn_numbers": [
+                5,
+                12,
+                18,
+                24,
+                30,
+                35,
+                42,
+                48,
+                54,
+                60
+            ],
+            "player_cards": {
+                "Player 1": [
+                    [
+                        5,
+                        10,
+                        15,
+                        20,
+                        25
+                    ],
+                    [
+                        30,
+                        35,
+                        40,
+                        45,
+                        50
+                    ]
+                ],
+                "Player 2": [
+                    [
+                        2,
+                        12,
+                        22,
+                        32,
+                        42
+                    ],
+                    [
+                        8,
+                        18,
+                        28,
+                        38,
+                        48
+                    ]
+                ]
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which player wins the bingo game first?",
+                "expected_answer": "Player 2"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many numbers were needed before a player won?",
+                "expected_answer": 8
+            }
+        ]
+    },
+    {
+        "challenge_id": "Connect-4",
+        "title": "Connect 4 Game Analysis",
+        "category": "Game Theory",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a board state, determine the best move to win in Connect 4.",
+        "data": {
+            "board_state": [
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "-",
+                    "X",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "O",
+                    "X",
+                    "O",
+                    "-",
+                    "-"
+                ],
+                [
+                    "-",
+                    "X",
+                    "O",
+                    "O",
+                    "X",
+                    "-",
+                    "-"
+                ],
+                [
+                    "X",
+                    "O",
+                    "X",
+                    "O",
+                    "X",
+                    "O",
+                    "-"
+                ]
+            ],
+            "player": "X"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the best move for player X to win?",
+                "expected_answer": "Drop in column 6"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If player O moves next, what is their optimal strategy?",
+                "expected_answer": "Block column 6"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Wheres-Wally",
+        "title": "Where's Wally Search Challenge",
+        "category": "Image Processing",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given an image with Wally hidden in a crowded scene, identify his location.",
+        "data": {
+            "image_size": [
+                1920,
+                1080
+            ],
+            "hidden_object": "Wally",
+            "difficulty_level": "Hard"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What are the approximate coordinates of Wally in the image?",
+                "expected_answer": [
+                    1452,
+                    687
+                ]
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the most common strategy to locate Wally efficiently?",
+                "expected_answer": "Look for his red-and-white striped shirt and hat."
+            }
+        ]
+    },
+    {
+        "challenge_id": "Baccarat",
+        "title": "Baccarat Probability Analysis",
+        "category": "Probability & Gambling",
+        "difficulty": "Advanced",
+        "problem_statement": "Analyze baccarat game outcomes and determine the best betting strategy based on probability.",
+        "data": {
+            "player_hand": [
+                "5",
+                "3"
+            ],
+            "banker_hand": [
+                "7",
+                "2"
+            ],
+            "draw_rules": "Player draws at 5 or lower, Banker draws at 6 or lower."
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the final score for the player?",
+                "expected_answer": 8
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the probability of a tie in Baccarat?",
+                "expected_answer": "9.6%"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Battleship",
+        "title": "Battleship Strategy Simulation",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a board layout and available shots, determine the best strategy to sink enemy ships.",
+        "data": {
+            "grid_size": [
+                10,
+                10
+            ],
+            "ships_remaining": {
+                "Carrier": [
+                    [
+                        1,
+                        1
+                    ],
+                    [
+                        1,
+                        2
+                    ],
+                    [
+                        1,
+                        3
+                    ],
+                    [
+                        1,
+                        4
+                    ],
+                    [
+                        1,
+                        5
+                    ]
+                ],
+                "Destroyer": [
+                    [
+                        3,
+                        4
+                    ],
+                    [
+                        3,
+                        5
+                    ],
+                    [
+                        3,
+                        6
+                    ]
+                ]
+            },
+            "available_shots": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    2
+                ],
+                [
+                    3,
+                    4
+                ]
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which shot has the highest probability of hitting a ship?",
+                "expected_answer": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "question_id": "Q2",
+                "text": "After hitting a ship, what is the best follow-up shot?",
+                "expected_answer": [
+                    1,
+                    2
+                ]
+            }
+        ]
+    },
+    {
+        "challenge_id": "Bowling-Time",
+        "title": "Bowling Score Calculation",
+        "category": "Game Scoring",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a sequence of bowling rolls, compute the final score according to standard bowling rules.",
+        "data": {
+            "frames": [
+                [
+                    10,
+                    0
+                ],
+                [
+                    9,
+                    1
+                ],
+                [
+                    5,
+                    5
+                ],
+                [
+                    7,
+                    2
+                ],
+                [
+                    10,
+                    0
+                ],
+                [
+                    10,
+                    0
+                ],
+                [
+                    10,
+                    0
+                ],
+                [
+                    9,
+                    0
+                ],
+                [
+                    8,
+                    2
+                ],
+                [
+                    10,
+                    10,
+                    10
+                ]
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total score for this bowling game?",
+                "expected_answer": 187
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many strikes were bowled in the game?",
+                "expected_answer": 5
+            }
+        ]
+    },
+    {
+        "challenge_id": "Tic-Tac-Toe",
+        "title": "Tic-Tac-Toe Optimal Move",
+        "category": "Game Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a Tic-Tac-Toe board, determine the best next move to either win or block the opponent.",
+        "data": {
+            "board_state": [
+                [
+                    "X",
+                    "O",
+                    "X"
+                ],
+                [
+                    "O",
+                    "X",
+                    "-"
+                ],
+                [
+                    "-",
+                    "-",
+                    "O"
+                ]
+            ],
+            "player": "X"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the best move for player X to win the game?",
+                "expected_answer": [
+                    2,
+                    1
+                ]
+            },
+            {
+                "question_id": "Q2",
+                "text": "If player O moves next, where should they play to block X?",
+                "expected_answer": [
+                    2,
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "challenge_id": "Rock-Paper-Scissors",
+        "title": "Rock-Paper-Scissors Game Analysis",
+        "category": "Game Probability",
+        "difficulty": "Beginner",
+        "problem_statement": "Analyze a sequence of Rock-Paper-Scissors plays and determine the winning moves.",
+        "data": {
+            "rounds": [
+                {
+                    "player1": "Rock",
+                    "player2": "Scissors"
+                },
+                {
+                    "player1": "Paper",
+                    "player2": "Rock"
+                },
+                {
+                    "player1": "Scissors",
+                    "player2": "Scissors"
+                }
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "How many rounds did player 1 win?",
+                "expected_answer": 2
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the most played move by both players?",
+                "expected_answer": "Rock and Scissors"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Bingo",
+        "title": "Bingo Game Analysis",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a set of drawn bingo numbers and player cards, determine the first player to achieve bingo.",
+        "data": {
+            "drawn_numbers": [
+                5,
+                12,
+                18,
+                24,
+                30,
+                35,
+                42,
+                48,
+                54,
+                60
+            ],
+            "player_cards": {
+                "Player 1": [
+                    [
+                        5,
+                        10,
+                        15,
+                        20,
+                        25
+                    ],
+                    [
+                        30,
+                        35,
+                        40,
+                        45,
+                        50
+                    ]
+                ],
+                "Player 2": [
+                    [
+                        2,
+                        12,
+                        22,
+                        32,
+                        42
+                    ],
+                    [
+                        8,
+                        18,
+                        28,
+                        38,
+                        48
+                    ]
+                ]
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which player wins the bingo game first?",
+                "expected_answer": "Player 2"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many numbers were needed before a player won?",
+                "expected_answer": 8
+            }
+        ]
+    },
+    {
+        "challenge_id": "Board-Game",
+        "title": "Board Game Strategy",
+        "category": "Game Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Players take turns moving across a board. Given the board state and dice rolls, determine the best move.",
+        "data": {
+            "player_positions": {
+                "Player 1": 3,
+                "Player 2": 5
+            },
+            "dice_rolls": [
+                2,
+                4,
+                6
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "If Player 1 rolls a 6, what is their new position?",
+                "expected_answer": 9
+            },
+            {
+                "question_id": "Q2",
+                "text": "Who has the highest probability of reaching the finish line first?",
+                "expected_answer": "Player 2"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Chess",
+        "title": "Chess Move Optimization",
+        "category": "Game Strategy",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a chessboard position, determine the best move to checkmate the opponent.",
+        "data": {
+            "board_state": "FEN notation: rnbqkbnr/pppppppp/8/8/4Q3/8/PPPPPPPP/RNB1KBNR",
+            "player": "White"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the best move for White to deliver checkmate?",
+                "expected_answer": "Qxe5#"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If Black plays d6, what is the best response?",
+                "expected_answer": "Qf4+"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Tetris-Scoring",
+        "title": "Tetris Score Calculation",
+        "category": "Game Scoring",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a sequence of cleared lines in Tetris, compute the total score.",
+        "data": {
+            "cleared_lines": [
+                1,
+                2,
+                4,
+                3
+            ],
+            "scoring_rules": {
+                "1_line": 100,
+                "2_lines": 300,
+                "3_lines": 500,
+                "4_lines": 800
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total score for the given sequence of line clears?",
+                "expected_answer": 1700
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many points does a single Tetris (4-line clear) give?",
+                "expected_answer": 800
+            }
+        ]
+    },
+    {
+        "challenge_id": "Story-About-the-Reels",
+        "title": "Slot Machine Probability Analysis",
+        "category": "Probability & Gambling",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a slot machine spin history, determine the expected return and probability of winning.",
+        "data": {
+            "spins": [
+                {
+                    "symbols": [
+                        "Cherry",
+                        "Cherry",
+                        "Bell"
+                    ],
+                    "payout": 10
+                },
+                {
+                    "symbols": [
+                        "Seven",
+                        "Seven",
+                        "Seven"
+                    ],
+                    "payout": 100
+                },
+                {
+                    "symbols": [
+                        "Bar",
+                        "Cherry",
+                        "Seven"
+                    ],
+                    "payout": 0
+                }
+            ],
+            "bet_amount": 5
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total payout for the given spins?",
+                "expected_answer": 110
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the expected return per bet?",
+                "expected_answer": 36.67
+            }
+        ]
+    },
+    {
+        "challenge_id": "Steppies-en-Pofadders",
+        "title": "Ladder and Snakes Board Game",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a board game with ladders and snakes, determine the shortest path to reach the finish line.",
+        "data": {
+            "board_size": 100,
+            "ladders": {
+                "3": 22,
+                "8": 30,
+                "28": 84
+            },
+            "snakes": {
+                "99": 7,
+                "95": 56,
+                "75": 48
+            },
+            "player_position": 1
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the minimum number of dice rolls required to reach the finish line?",
+                "expected_answer": 7
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which ladder provides the biggest advantage?",
+                "expected_answer": [
+                    28,
+                    84
+                ]
+            }
+        ]
+    },
+    {
+        "challenge_id": "Rugby-World-Cup",
+        "title": "Rugby World Cup Match Analysis",
+        "category": "Sports Analytics",
+        "difficulty": "Advanced",
+        "problem_statement": "Given match statistics, predict the winning team based on past performance.",
+        "data": {
+            "teams": [
+                "South Africa",
+                "New Zealand"
+            ],
+            "match_stats": {
+                "South Africa": {
+                    "tries": 3,
+                    "penalty_kicks": 4,
+                    "possession": 55
+                },
+                "New Zealand": {
+                    "tries": 2,
+                    "penalty_kicks": 3,
+                    "possession": 45
+                }
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which team is predicted to win based on the given statistics?",
+                "expected_answer": "South Africa"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many total points did South Africa score?",
+                "expected_answer": 27
+            }
+        ]
+    },
+    {
+        "challenge_id": "Elimination-Race",
+        "title": "Elimination Race Simulation",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze race lap times and determine which driver is eliminated each round.",
+        "data": {
+            "drivers": [
+                "Hamilton",
+                "Verstappen",
+                "Leclerc"
+            ],
+            "lap_times": {
+                "Hamilton": [
+                    78.2,
+                    77.5,
+                    76.9
+                ],
+                "Verstappen": [
+                    78.0,
+                    77.8,
+                    76.7
+                ],
+                "Leclerc": [
+                    79.1,
+                    78.9,
+                    78.5
+                ]
+            },
+            "elimination_rule": "Slowest driver each round is eliminated"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which driver is eliminated in the first round?",
+                "expected_answer": "Leclerc"
+            },
+            {
+                "question_id": "Q2",
+                "text": "Who wins the elimination race?",
+                "expected_answer": "Verstappen"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Table-Soccer",
+        "title": "Table Soccer Match Strategy",
+        "category": "Game Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given player formations and past performance, determine the best match strategy.",
+        "data": {
+            "team_formation": {
+                "Team A": [
+                    "Forward",
+                    "Midfielder",
+                    "Goalkeeper"
+                ],
+                "Team B": [
+                    "Defender",
+                    "Midfielder",
+                    "Forward"
+                ]
+            },
+            "goal_attempts": {
+                "Team A": 5,
+                "Team B": 3
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which team has the best offensive potential based on goal attempts?",
+                "expected_answer": "Team A"
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which formation type is better suited for a defensive game?",
+                "expected_answer": "Team B's formation with a defender"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Pinball",
+        "title": "Pinball Score Calculation",
+        "category": "Game Scoring",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a sequence of pinball scores, compute the final score with bonus multipliers.",
+        "data": {
+            "scores": [
+                500,
+                1500,
+                2000,
+                3000
+            ],
+            "bonus_multiplier": 2
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total score including the bonus multiplier?",
+                "expected_answer": 14000
+            },
+            {
+                "question_id": "Q2",
+                "text": "What was the highest single score achieved before bonuses?",
+                "expected_answer": 3000
+            }
+        ]
+    },
+    {
+        "challenge_id": "Grocery-Store-Cleanup",
+        "title": "Store Inventory Optimization",
+        "category": "Logistics & Optimization",
+        "difficulty": "Advanced",
+        "problem_statement": "Given store inventory data, determine which items should be restocked and which should be discounted.",
+        "data": {
+            "inventory": {
+                "Apples": {
+                    "stock": 10,
+                    "threshold": 5,
+                    "discount": false
+                },
+                "Milk": {
+                    "stock": 2,
+                    "threshold": 5,
+                    "discount": true
+                },
+                "Bread": {
+                    "stock": 1,
+                    "threshold": 3,
+                    "discount": true
+                }
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which items need to be restocked?",
+                "expected_answer": [
+                    "Milk",
+                    "Bread"
+                ]
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which items should be discounted?",
+                "expected_answer": [
+                    "Milk",
+                    "Bread"
+                ]
+            }
+        ]
+    },
+    {
+        "challenge_id": "Mzansi-Hotel",
+        "title": "Hotel Booking Optimization",
+        "category": "Business Strategy",
+        "difficulty": "Advanced",
+        "problem_statement": "Given hotel room bookings, determine the optimal room allocation and revenue projection.",
+        "data": {
+            "rooms": {
+                "Standard": {
+                    "available": 10,
+                    "rate": 100
+                },
+                "Deluxe": {
+                    "available": 5,
+                    "rate": 200
+                },
+                "Suite": {
+                    "available": 2,
+                    "rate": 500
+                }
+            },
+            "bookings": {
+                "Standard": 8,
+                "Deluxe": 4,
+                "Suite": 2
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total revenue from the given bookings?",
+                "expected_answer": 2800
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which room type has the highest revenue generation?",
+                "expected_answer": "Suite"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Clock-Solitaire",
+        "title": "Clock Solitaire Probability Analysis",
+        "category": "Probability & Card Games",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze card positions and determine the probability of winning Clock Solitaire.",
+        "data": {
+            "cards_remaining": {
+                "Kings": 3,
+                "Queens": 2,
+                "Jacks": 4
+            },
+            "moves_left": 5
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the probability of drawing a King in the next move?",
+                "expected_answer": "3/9 or 33.3%"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If a Jack is drawn, how many Jacks remain?",
+                "expected_answer": 3
+            }
+        ]
+    },
+    {
+        "challenge_id": "At-the-Races",
+        "title": "Horse Race Simulation",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given race results, determine the best betting strategy.",
+        "data": {
+            "horses": [
+                "Lightning",
+                "Storm",
+                "Blaze"
+            ],
+            "odds": {
+                "Lightning": 3.0,
+                "Storm": 2.5,
+                "Blaze": 4.0
+            },
+            "past_performance": {
+                "Lightning": "1st",
+                "Storm": "2nd",
+                "Blaze": "3rd"
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which horse has the highest probability of winning based on past performance?",
+                "expected_answer": "Lightning"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If you bet $100 on Blaze and he wins, what is the payout?",
+                "expected_answer": 400
+            }
+        ]
+    },
+    {
+        "challenge_id": "Cricket-Darts",
+        "title": "Cricket Darts Scoring",
+        "category": "Game Scoring",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a series of dart throws in a Cricket Darts match, compute the final score.",
+        "data": {
+            "throws": [
+                {
+                    "player": "Alice",
+                    "target": 20,
+                    "hits": 3
+                },
+                {
+                    "player": "Bob",
+                    "target": 19,
+                    "hits": 2
+                },
+                {
+                    "player": "Alice",
+                    "target": 18,
+                    "hits": 1
+                }
+            ],
+            "scoring_rules": {
+                "20": 20,
+                "19": 19,
+                "18": 18
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is Alice's total score?",
+                "expected_answer": 78
+            },
+            {
+                "question_id": "Q2",
+                "text": "Who is leading after these throws?",
+                "expected_answer": "Alice"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Lana-Banana",
+        "title": "Banana Sales Optimization",
+        "category": "Business Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze banana sales data to determine the best pricing strategy.",
+        "data": {
+            "sales": {
+                "week_1": 150,
+                "week_2": 180,
+                "week_3": 220
+            },
+            "price_per_unit": 0.5
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total revenue from banana sales?",
+                "expected_answer": 275
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which week had the highest sales volume?",
+                "expected_answer": "Week 3"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Backgammon",
+        "title": "Backgammon Move Strategy",
+        "category": "Game Strategy",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a backgammon board state, determine the best move strategy.",
+        "data": {
+            "board_state": "FEN-like notation for backgammon",
+            "player": "White"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the optimal move for White?",
+                "expected_answer": "Move checker from point 13 to point 8"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the probability of rolling doubles in the next turn?",
+                "expected_answer": "1/6 or 16.7%"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Vlookie-Gold-Miner",
+        "title": "Gold Mining Optimization",
+        "category": "Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given mine yield data, determine the best mining strategy for maximum profit.",
+        "data": {
+            "gold_yield": {
+                "Mine A": 500,
+                "Mine B": 700,
+                "Mine C": 450
+            },
+            "cost_per_mine": {
+                "Mine A": 200,
+                "Mine B": 300,
+                "Mine C": 180
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which mine provides the highest profit?",
+                "expected_answer": "Mine B"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total profit from mining all three locations?",
+                "expected_answer": 970
+            }
+        ]
+    },
+    {
+        "challenge_id": "Cribbage",
+        "title": "Cribbage Scoring",
+        "category": "Game Scoring",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a set of cribbage hands, determine the final score.",
+        "data": {
+            "hands": [
+                {
+                    "player": "Alice",
+                    "cards": [
+                        "5H",
+                        "5D",
+                        "5C",
+                        "JH"
+                    ],
+                    "score": 29
+                },
+                {
+                    "player": "Bob",
+                    "cards": [
+                        "4H",
+                        "6D",
+                        "7C",
+                        "KH"
+                    ],
+                    "score": 10
+                }
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which player has the highest scoring hand?",
+                "expected_answer": "Alice"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total combined score of all hands?",
+                "expected_answer": 39
+            }
+        ]
+    },
+    {
+        "challenge_id": "Flower-Power",
+        "title": "Garden Growth Optimization",
+        "category": "Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given soil conditions and watering schedules, determine the best strategy for plant growth.",
+        "data": {
+            "soil_quality": {
+                "Plot 1": "Good",
+                "Plot 2": "Average",
+                "Plot 3": "Poor"
+            },
+            "watering_schedule": {
+                "Plot 1": "Daily",
+                "Plot 2": "Every 2 days",
+                "Plot 3": "Weekly"
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which plot is expected to yield the most flowers?",
+                "expected_answer": "Plot 1"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If watering is doubled for Plot 3, how does the expected yield change?",
+                "expected_answer": "Improves but remains lower than Plot 1"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Numbers-Game",
+        "title": "Numbers Puzzle Challenge",
+        "category": "Logic & Puzzle",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a set of numbers, determine the correct sequence that satisfies the puzzle constraints.",
+        "data": {
+            "numbers": [
+                4,
+                8,
+                15,
+                16,
+                23,
+                42
+            ],
+            "operations": [
+                "+",
+                "-",
+                "*",
+                "/"
+            ],
+            "target_value": 108
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the correct sequence of operations to reach the target value?",
+                "expected_answer": "((4 * 8) + 15) * 2"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many different sequences can produce the target value?",
+                "expected_answer": 3
+            }
+        ]
+    },
+    {
+        "challenge_id": "Excel-Superheroes",
+        "title": "Data Cleaning with Superhero Data",
+        "category": "Data Processing",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a messy dataset of superheroes, clean the data and extract meaningful insights.",
+        "data": {
+            "heroes": [
+                "Iron Man",
+                "Spider-Man",
+                "Batman",
+                "Superman"
+            ],
+            "attributes": {
+                "Iron Man": {
+                    "Power": "Technology",
+                    "Strength": 80
+                },
+                "Spider-Man": {
+                    "Power": "Agility",
+                    "Strength": 75
+                },
+                "Batman": {
+                    "Power": "Tactics",
+                    "Strength": 70
+                },
+                "Superman": {
+                    "Power": "Super Strength",
+                    "Strength": 100
+                }
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which superhero has the highest strength rating?",
+                "expected_answer": "Superman"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the most common type of superhero power in the dataset?",
+                "expected_answer": "Technology/Agility"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Potions-Master",
+        "title": "Potion Brewing Optimization",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a list of ingredients and potion formulas, determine the best strategy for potion creation.",
+        "data": {
+            "ingredients": [
+                "Mandrake",
+                "Dragon Scale",
+                "Phoenix Feather"
+            ],
+            "formulas": {
+                "Health Potion": [
+                    "Mandrake",
+                    "Phoenix Feather"
+                ],
+                "Strength Potion": [
+                    "Dragon Scale",
+                    "Mandrake"
+                ]
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which potion requires the most ingredients?",
+                "expected_answer": "Strength Potion"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If you have only Mandrake and Phoenix Feather, which potion can you brew?",
+                "expected_answer": "Health Potion"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Number-1-Fan-8AM",
+        "title": "Fan Support Analysis",
+        "category": "Sports Analytics",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze fan support data to determine the most supported team.",
+        "data": {
+            "teams": [
+                "Team A",
+                "Team B",
+                "Team C"
+            ],
+            "fan_support": {
+                "Team A": 5000,
+                "Team B": 7000,
+                "Team C": 6500
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which team has the highest number of supporters?",
+                "expected_answer": "Team B"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total number of fans across all teams?",
+                "expected_answer": 18500
+            }
+        ]
+    },
+    {
+        "challenge_id": "Number-1-Fan-5PM",
+        "title": "Fan Engagement Prediction",
+        "category": "Sports Analytics",
+        "difficulty": "Intermediate",
+        "problem_statement": "Predict future fan engagement based on current trends.",
+        "data": {
+            "fan_growth_rate": {
+                "Team A": 5,
+                "Team B": 7,
+                "Team C": 6
+            },
+            "current_fans": {
+                "Team A": 5000,
+                "Team B": 7000,
+                "Team C": 6500
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which team is expected to have the most fans after one year?",
+                "expected_answer": "Team B"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If the growth rate remains constant, how many fans will Team C have after 2 years?",
+                "expected_answer": 7220
+            }
+        ]
+    },
+    {
+        "challenge_id": "Pass-the-Arrows",
+        "title": "Archery Accuracy Analysis",
+        "category": "Game Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze archery scores and determine the most accurate archer.",
+        "data": {
+            "archers": [
+                "Robin",
+                "Legolas",
+                "Hawkeye"
+            ],
+            "accuracy_scores": {
+                "Robin": 85,
+                "Legolas": 90,
+                "Hawkeye": 88
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which archer has the highest accuracy score?",
+                "expected_answer": "Legolas"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the average accuracy score across all archers?",
+                "expected_answer": 87.67
+            }
+        ]
+    },
+    {
+        "challenge_id": "Deep-Sea-Diving",
+        "title": "Treasure Hunting in the Deep Sea",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a mapped ocean floor with treasure locations, determine the optimal diving path to maximize treasure collection.",
+        "data": {
+            "treasure_locations": {
+                "A3": 500,
+                "B5": 1000,
+                "C7": 750
+            },
+            "oxygen_levels": {
+                "A3": 80,
+                "B5": 60,
+                "C7": 70
+            },
+            "dive_limit": 3
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which location provides the highest treasure value?",
+                "expected_answer": "B5"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If a diver can only visit two locations, which ones should they choose for the best return?",
+                "expected_answer": [
+                    "B5",
+                    "C7"
+                ]
+            }
+        ]
+    },
+    {
+        "challenge_id": "Ship-the-World",
+        "title": "Global Shipping Logistics",
+        "category": "Logistics & Optimization",
+        "difficulty": "Advanced",
+        "problem_statement": "Given international trade routes, determine the most efficient shipping paths to minimize cost and time.",
+        "data": {
+            "ports": [
+                "New York",
+                "Shanghai",
+                "Rotterdam"
+            ],
+            "shipping_costs": {
+                "New York to Shanghai": 5000,
+                "Shanghai to Rotterdam": 4000
+            },
+            "delivery_times": {
+                "New York to Shanghai": 14,
+                "Shanghai to Rotterdam": 10
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total cost of shipping from New York to Rotterdam via Shanghai?",
+                "expected_answer": 9000
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total delivery time for this route?",
+                "expected_answer": 24
+            }
+        ]
+    },
+    {
+        "challenge_id": "Spreadsheet-Nightmare",
+        "title": "Data Cleanup and Error Detection",
+        "category": "Data Processing",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a poorly formatted spreadsheet, identify and correct data inconsistencies.",
+        "data": {
+            "data_errors": {
+                "Duplicated Entries": 5,
+                "Missing Values": 10,
+                "Incorrect Formats": 7
+            },
+            "total_entries": 100
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What percentage of the dataset contains errors?",
+                "expected_answer": 22
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which error type appears most frequently?",
+                "expected_answer": "Missing Values"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Sommelier",
+        "title": "Wine Selection Optimization",
+        "category": "Business Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a list of wines with different attributes, determine the best pairings for a meal.",
+        "data": {
+            "wines": [
+                "Chardonnay",
+                "Cabernet Sauvignon",
+                "Merlot"
+            ],
+            "attributes": {
+                "Chardonnay": {
+                    "Sweetness": "Dry",
+                    "Acidity": "High"
+                },
+                "Cabernet Sauvignon": {
+                    "Sweetness": "Medium",
+                    "Acidity": "Low"
+                },
+                "Merlot": {
+                    "Sweetness": "Medium",
+                    "Acidity": "Medium"
+                }
+            },
+            "meal": "Grilled Steak"
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which wine pairs best with a grilled steak?",
+                "expected_answer": "Cabernet Sauvignon"
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which wine has the highest acidity?",
+                "expected_answer": "Chardonnay"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Excel-Ninja",
+        "title": "Advanced Excel Functions",
+        "category": "Data Processing",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a set of complex Excel formulas, determine the correct outputs and debugging strategies.",
+        "data": {
+            "formulas": {
+                "VLOOKUP": "Error",
+                "INDEX-MATCH": "Correct",
+                "ARRAYFORMULA": "Slow Performance"
+            },
+            "dataset_size": 10000
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which formula is experiencing an error?",
+                "expected_answer": "VLOOKUP"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the likely issue with ARRAYFORMULA?",
+                "expected_answer": "Slow performance due to large dataset size"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Doggie-Daycare",
+        "title": "Pet Care Optimization",
+        "category": "Logistics & Optimization",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a pet daycare facility, optimize scheduling and pet assignments.",
+        "data": {
+            "dogs": [
+                "Buddy",
+                "Charlie",
+                "Max"
+            ],
+            "room_availability": {
+                "Small Dog Room": 2,
+                "Large Dog Room": 3
+            },
+            "playgroups": {
+                "Buddy": "Small",
+                "Charlie": "Large",
+                "Max": "Large"
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which room should Charlie be assigned to?",
+                "expected_answer": "Large Dog Room"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many more dogs can be accommodated in the facility?",
+                "expected_answer": 1
+            }
+        ]
+    },
+    {
+        "challenge_id": "Eve-Online",
+        "title": "Asteroid Mining Optimization",
+        "category": "Game Strategy",
+        "difficulty": "Advanced",
+        "problem_statement": "Given asteroid compositions and mining efficiency, determine the best mining strategy.",
+        "data": {
+            "asteroids": [
+                "Veldspar",
+                "Scordite",
+                "Plagioclase"
+            ],
+            "yield_rates": {
+                "Veldspar": 500,
+                "Scordite": 750,
+                "Plagioclase": 600
+            },
+            "mining_efficiency": {
+                "Basic": 0.8,
+                "Advanced": 1.2
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which asteroid provides the highest yield per cycle?",
+                "expected_answer": "Scordite"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If using Advanced mining, how much yield can be obtained from Plagioclase?",
+                "expected_answer": 720
+            }
+        ]
+    },
+    {
+        "challenge_id": "Farming-Vines",
+        "title": "Optimizing Vineyard Yields",
+        "category": "Agriculture & Business Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given different vineyard conditions, determine the optimal planting strategy for maximizing grape yield.",
+        "data": {
+            "vineyard_plots": [
+                "Plot A",
+                "Plot B",
+                "Plot C"
+            ],
+            "soil_quality": {
+                "Plot A": "Excellent",
+                "Plot B": "Good",
+                "Plot C": "Fair"
+            },
+            "expected_yield": {
+                "Plot A": 5000,
+                "Plot B": 4000,
+                "Plot C": 3500
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which vineyard plot is expected to produce the highest grape yield?",
+                "expected_answer": "Plot A"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total expected grape yield across all plots?",
+                "expected_answer": 12500
+            }
+        ]
+    },
+    {
+        "challenge_id": "Treasure-Hunt",
+        "title": "Treasure Map Navigation",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a treasure map, determine the shortest path to the hidden treasure.",
+        "data": {
+            "map_size": [
+                10,
+                10
+            ],
+            "treasure_location": [
+                7,
+                5
+            ],
+            "starting_position": [
+                0,
+                0
+            ],
+            "obstacles": [
+                [
+                    3,
+                    4
+                ],
+                [
+                    5,
+                    6
+                ],
+                [
+                    8,
+                    3
+                ]
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the shortest path to the treasure from the starting position?",
+                "expected_answer": "Right 7, Down 5"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many obstacles are on the map?",
+                "expected_answer": 3
+            }
+        ]
+    },
+    {
+        "challenge_id": "Kruger-National-Park",
+        "title": "Wildlife Tracking and Conservation",
+        "category": "Environmental Science",
+        "difficulty": "Advanced",
+        "problem_statement": "Given animal tracking data in Kruger National Park, determine the migration patterns and conservation needs.",
+        "data": {
+            "animal_species": [
+                "Lions",
+                "Elephants",
+                "Rhinos"
+            ],
+            "tracking_data": {
+                "Lions": 50,
+                "Elephants": 120,
+                "Rhinos": 30
+            },
+            "habitat_zones": [
+                "Savannah",
+                "Forest",
+                "Wetlands"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which animal species has the highest recorded movement?",
+                "expected_answer": "Elephants"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total number of tracked animals in the dataset?",
+                "expected_answer": 200
+            }
+        ]
+    },
+    {
+        "challenge_id": "Conversion-Time",
+        "title": "E-Commerce Sales Conversion Analysis",
+        "category": "Business Analytics",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze website traffic data to determine the best conversion strategies.",
+        "data": {
+            "visitor_counts": {
+                "Week 1": 5000,
+                "Week 2": 5500,
+                "Week 3": 6000
+            },
+            "conversion_rates": {
+                "Week 1": 2.5,
+                "Week 2": 3.0,
+                "Week 3": 3.5
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which week had the highest number of converted customers?",
+                "expected_answer": "Week 3"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total number of conversions across all weeks?",
+                "expected_answer": 395
+            }
+        ]
+    },
+    {
+        "challenge_id": "Left-Handed-Right-Handed",
+        "title": "Handedness and Task Efficiency",
+        "category": "Psychology & Human Behavior",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze handedness data to determine whether left-handed or right-handed individuals complete tasks more efficiently.",
+        "data": {
+            "handedness_distribution": {
+                "Left-Handed": 10,
+                "Right-Handed": 90
+            },
+            "task_completion_times": {
+                "Left-Handed": 12.5,
+                "Right-Handed": 11.0
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which group has the faster average task completion time?",
+                "expected_answer": "Right-Handed"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the percentage of left-handed individuals in the dataset?",
+                "expected_answer": 10
+            }
+        ]
+    },
+    {
+        "challenge_id": "Simple-Case",
+        "title": "Basic Data Calculation",
+        "category": "Data Processing",
+        "difficulty": "Beginner",
+        "problem_statement": "Perform simple arithmetic calculations based on given data values.",
+        "data": {
+            "values": [
+                10,
+                20,
+                30,
+                40
+            ],
+            "operations": [
+                "Addition",
+                "Multiplication"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the sum of all values?",
+                "expected_answer": 100
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the product of all values?",
+                "expected_answer": 240000
+            }
+        ]
+    },
+    {
+        "challenge_id": "Number-1-Fan-2024",
+        "title": "Fan Engagement Analysis",
+        "category": "Sports Analytics",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze fan attendance data and determine the most popular teams.",
+        "data": {
+            "teams": [
+                "Team A",
+                "Team B",
+                "Team C"
+            ],
+            "attendance": {
+                "Team A": 7000,
+                "Team B": 8500,
+                "Team C": 9200
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which team has the highest fan attendance?",
+                "expected_answer": "Team C"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total fan attendance across all teams?",
+                "expected_answer": 24700
+            }
+        ]
+    },
+    {
+        "challenge_id": "Almost-There",
+        "title": "Route Optimization Challenge",
+        "category": "Logistics & Optimization",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a list of delivery points and constraints, determine the optimal route to minimize travel time.",
+        "data": {
+            "delivery_points": [
+                "Point A",
+                "Point B",
+                "Point C"
+            ],
+            "travel_times": {
+                "A to B": 15,
+                "B to C": 10,
+                "C to A": 20
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the shortest route covering all points and returning to the start?",
+                "expected_answer": [
+                    "A to B",
+                    "B to C",
+                    "C to A"
+                ]
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total travel time for this optimal route?",
+                "expected_answer": 45
+            }
+        ]
+    },
+    {
+        "challenge_id": "Census",
+        "title": "Demographic Data Analysis",
+        "category": "Data Processing",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze census data to determine population trends and city rankings.",
+        "data": {
+            "cities": [
+                "City X",
+                "City Y",
+                "City Z"
+            ],
+            "populations": {
+                "City X": 1200000,
+                "City Y": 850000,
+                "City Z": 600000
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which city has the highest population?",
+                "expected_answer": "City X"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total population across all cities?",
+                "expected_answer": 2650000
+            }
+        ]
+    },
+    {
+        "challenge_id": "Snap",
+        "title": "Card Matching Game",
+        "category": "Game Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a deck of cards, determine the probability of drawing a matching pair.",
+        "data": {
+            "deck_size": 52,
+            "pairs_in_deck": 26,
+            "draw_attempts": 10
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the probability of drawing a matching pair in one attempt?",
+                "expected_answer": "1/26 or 3.85%"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many matching pairs are expected in 10 draws?",
+                "expected_answer": 0.38
+            }
+        ]
+    },
+    {
+        "challenge_id": "Game-of-Life",
+        "title": "Cellular Automata Simulation",
+        "category": "Simulation",
+        "difficulty": "Advanced",
+        "problem_statement": "Simulate Conway's Game of Life and determine future states based on initial conditions.",
+        "data": {
+            "grid_size": [
+                10,
+                10
+            ],
+            "initial_live_cells": [
+                [
+                    2,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ],
+                [
+                    4,
+                    3
+                ]
+            ],
+            "rules": [
+                "Any live cell with 2 or 3 live neighbors survives",
+                "Any dead cell with exactly 3 live neighbors becomes a live cell"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the next state of the grid after one iteration?",
+                "expected_answer": "Block formation at [3, 3], [3, 4], [4, 3], [4, 4]"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If left to evolve for 5 iterations, does the pattern stabilize?",
+                "expected_answer": "Yes, forming a stable block"
+            }
+        ]
+    },
+    {
+        "challenge_id": "You-Get-The-Plates",
+        "title": "Traffic Violation Data Analysis",
+        "category": "Data Processing",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a dataset of traffic violations, determine the most frequently fined vehicle types and states.",
+        "data": {
+            "vehicle_types": [
+                "Sedan",
+                "SUV",
+                "Truck"
+            ],
+            "infractions": {
+                "Speeding": 120,
+                "Illegal Parking": 85,
+                "Red Light Violation": 75
+            },
+            "states": [
+                "California",
+                "Texas",
+                "New York"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which traffic violation is the most common?",
+                "expected_answer": "Speeding"
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which type of vehicle is most frequently fined?",
+                "expected_answer": "SUV"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Indexing-the-Mails",
+        "title": "Email Organization and Categorization",
+        "category": "Data Processing",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a dataset of emails, classify them based on urgency and content categories.",
+        "data": {
+            "email_categories": [
+                "Urgent",
+                "Normal",
+                "Spam"
+            ],
+            "classification_counts": {
+                "Urgent": 150,
+                "Normal": 400,
+                "Spam": 250
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which category has the highest number of emails?",
+                "expected_answer": "Normal"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What percentage of emails are marked as Spam?",
+                "expected_answer": 29.41
+            }
+        ]
+    },
+    {
+        "challenge_id": "Choco-Late",
+        "title": "Chocolate Manufacturing Optimization",
+        "category": "Business Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze chocolate production efficiency and determine the best allocation of resources.",
+        "data": {
+            "factories": [
+                "Factory A",
+                "Factory B",
+                "Factory C"
+            ],
+            "production_rates": {
+                "Factory A": 5000,
+                "Factory B": 7000,
+                "Factory C": 6000
+            },
+            "raw_material_costs": {
+                "Cocoa": 10000,
+                "Milk": 5000,
+                "Sugar": 3000
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which factory produces the most chocolate?",
+                "expected_answer": "Factory B"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total production output across all factories?",
+                "expected_answer": 18000
+            }
+        ]
+    },
+    {
+        "challenge_id": "Excel-Athlete-Basics",
+        "title": "Excel Functions Training",
+        "category": "Data Processing",
+        "difficulty": "Beginner",
+        "problem_statement": "Analyze spreadsheet functions and determine the correct formula usage.",
+        "data": {
+            "functions": [
+                "SUM",
+                "AVERAGE",
+                "VLOOKUP"
+            ],
+            "common_errors": {
+                "SUM": "Range Incorrect",
+                "VLOOKUP": "Value Not Found"
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which function is most commonly used for total calculations?",
+                "expected_answer": "SUM"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the likely cause of an error in VLOOKUP?",
+                "expected_answer": "Value Not Found"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Number-1-Fan-2024-5PM",
+        "title": "Fan Engagement Trends",
+        "category": "Sports Analytics",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze fan trends and determine the best strategies for increasing engagement.",
+        "data": {
+            "teams": [
+                "Team A",
+                "Team B",
+                "Team C"
+            ],
+            "social_media_followers": {
+                "Team A": 25000,
+                "Team B": 32000,
+                "Team C": 29000
+            },
+            "live_game_attendance": {
+                "Team A": 8000,
+                "Team B": 10000,
+                "Team C": 9000
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which team has the highest social media following?",
+                "expected_answer": "Team B"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total number of fans who attended live games?",
+                "expected_answer": 27000
+            }
+        ]
+    },
+    {
+        "challenge_id": "Letter-Soup",
+        "title": "Letter Frequency Puzzle",
+        "category": "Text Processing",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a scrambled set of letters, determine the most frequently occurring character and its count.",
+        "data": {
+            "letter_sequence": "uzTyjLmnfIqULrWCoArlPvoLzKNVCzTpIMoltrEnLcDpS",
+            "character_counts": {
+                "L": 4,
+                "T": 3,
+                "N": 2
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which letter appears most frequently in the given sequence?",
+                "expected_answer": "L"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many times does 'T' appear in the sequence?",
+                "expected_answer": 3
+            }
+        ]
+    },
+    {
+        "challenge_id": "Strategic-Choices",
+        "title": "Decision-Making in Business",
+        "category": "Business Strategy",
+        "difficulty": "Advanced",
+        "problem_statement": "Given different strategic options, determine the best course of action based on provided market conditions.",
+        "data": {
+            "strategies": [
+                "Expansion",
+                "Diversification",
+                "Cost Reduction"
+            ],
+            "expected_ROI": {
+                "Expansion": 15,
+                "Diversification": 10,
+                "Cost Reduction": 8
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which strategy has the highest expected return on investment (ROI)?",
+                "expected_answer": "Expansion"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the difference in ROI between Expansion and Cost Reduction?",
+                "expected_answer": 7
+            }
+        ]
+    },
+    {
+        "challenge_id": "Studying-Season-2024",
+        "title": "Exam Preparation Scheduling",
+        "category": "Time Management",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze study schedules and determine the most effective study routine.",
+        "data": {
+            "subjects": [
+                "Math",
+                "Science",
+                "History"
+            ],
+            "study_hours_per_week": {
+                "Math": 10,
+                "Science": 8,
+                "History": 6
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which subject has the most study hours allocated?",
+                "expected_answer": "Math"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the total number of study hours per week?",
+                "expected_answer": 24
+            }
+        ]
+    },
+    {
+        "challenge_id": "Painting-Crews",
+        "title": "Optimizing Paint Jobs",
+        "category": "Logistics & Optimization",
+        "difficulty": "Intermediate",
+        "problem_statement": "Determine the most efficient way to assign painting crews to different projects.",
+        "data": {
+            "crews": [
+                "Crew A",
+                "Crew B",
+                "Crew C"
+            ],
+            "project_sizes": {
+                "Project X": 3,
+                "Project Y": 2,
+                "Project Z": 5
+            },
+            "crew_capacity": {
+                "Crew A": 3,
+                "Crew B": 2,
+                "Crew C": 4
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which crew should be assigned to Project Z for optimal efficiency?",
+                "expected_answer": "Crew C"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If Crew A and Crew B work together, how many projects can they complete?",
+                "expected_answer": 2
+            }
+        ]
+    },
+    {
+        "challenge_id": "Hitchhiking-Day",
+        "title": "Travel Optimization",
+        "category": "Logistics & Optimization",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given available travel routes and vehicle capacities, determine the best way to reach the destination.",
+        "data": {
+            "routes": [
+                "Route A",
+                "Route B",
+                "Route C"
+            ],
+            "distances": {
+                "Route A": 50,
+                "Route B": 75,
+                "Route C": 60
+            },
+            "vehicle_availability": {
+                "Car": 3,
+                "Truck": 2,
+                "Bus": 5
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which route has the shortest distance?",
+                "expected_answer": "Route A"
+            },
+            {
+                "question_id": "Q2",
+                "text": "If a Bus can carry 5 passengers, how many total people can travel across all vehicles?",
+                "expected_answer": 10
+            }
+        ]
+    },
+    {
+        "challenge_id": "Volcano-Island",
+        "title": "Survival Planning on a Volcanic Island",
+        "category": "Simulation & Strategy",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given a volcanic island with different terrain types, determine the safest escape route and survival strategy.",
+        "data": {
+            "terrain_types": [
+                "Lava",
+                "Forest",
+                "Rocky",
+                "Water"
+            ],
+            "danger_levels": {
+                "Lava": "High",
+                "Forest": "Medium",
+                "Rocky": "Low",
+                "Water": "Safe"
+            },
+            "resources_available": {
+                "Food": 5,
+                "Water": 3,
+                "Tools": 2
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which terrain type is the safest for travel?",
+                "expected_answer": "Water"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How many total survival resources are available?",
+                "expected_answer": 10
+            }
+        ]
+    },
+    {
+        "challenge_id": "Ironman",
+        "title": "Triathlon Performance Analysis",
+        "category": "Sports Analytics",
+        "difficulty": "Advanced",
+        "problem_statement": "Given competitor performance data, determine the best strategies for improving triathlon results.",
+        "data": {
+            "segments": [
+                "Swim",
+                "Bike",
+                "Run"
+            ],
+            "average_times": {
+                "Swim": 30,
+                "Bike": 120,
+                "Run": 90
+            },
+            "competitor_ranks": {
+                "Alice": 1,
+                "Bob": 2,
+                "Charlie": 3
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which segment has the highest average time?",
+                "expected_answer": "Bike"
+            },
+            {
+                "question_id": "Q2",
+                "text": "Who is the top-ranked competitor?",
+                "expected_answer": "Alice"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Mortal-Wombat",
+        "title": "Fighting Game Move Analysis",
+        "category": "Game Simulation",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze a sequence of fighting game moves and determine the best attack strategy.",
+        "data": {
+            "moves": [
+                "Punch",
+                "Kick",
+                "Throw"
+            ],
+            "damage_values": {
+                "Punch": 5,
+                "Kick": 7,
+                "Throw": 6
+            },
+            "opponent_defense": {
+                "Block": "Reduces Damage",
+                "Dodge": "Avoids Attack"
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which move deals the highest damage?",
+                "expected_answer": "Kick"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What happens when an opponent dodges an attack?",
+                "expected_answer": "The attack is avoided"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Sleep-as-a-Sport",
+        "title": "Competitive Sleep Analysis",
+        "category": "Health & Performance",
+        "difficulty": "Intermediate",
+        "problem_statement": "Given sleep performance data, determine the best sleep strategies for competition.",
+        "data": {
+            "sleep_cycles": {
+                "Competitor A": 4,
+                "Competitor B": 5,
+                "Competitor C": 3
+            },
+            "sleep_quality": {
+                "Competitor A": 85,
+                "Competitor B": 90,
+                "Competitor C": 78
+            }
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which competitor has the highest sleep quality score?",
+                "expected_answer": "Competitor B"
+            },
+            {
+                "question_id": "Q2",
+                "text": "What is the average number of sleep cycles across all competitors?",
+                "expected_answer": 4
+            }
+        ]
+    },
+    {
+        "challenge_id": "Portal",
+        "title": "Teleportation Strategy Optimization",
+        "category": "Game Strategy",
+        "difficulty": "Advanced",
+        "problem_statement": "Given a map of teleportation portals, determine the fastest route to the exit.",
+        "data": {
+            "portal_locations": [
+                "A1",
+                "B3",
+                "C5"
+            ],
+            "travel_times": {
+                "A1 to B3": 5,
+                "B3 to C5": 7,
+                "C5 to Exit": 6
+            },
+            "obstacles": [
+                "Energy Barrier",
+                "Time Loop"
+            ]
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "What is the total time required to reach the exit using portals?",
+                "expected_answer": 18
+            },
+            {
+                "question_id": "Q2",
+                "text": "Which obstacle can delay teleportation?",
+                "expected_answer": "Time Loop"
+            }
+        ]
+    },
+    {
+        "challenge_id": "Waterflow",
+        "title": "Hydrodynamics and Flow Analysis",
+        "category": "Environmental Science",
+        "difficulty": "Intermediate",
+        "problem_statement": "Analyze water flow through different terrains and determine optimal flow management strategies.",
+        "data": {
+            "terrains": [
+                "Sand",
+                "Rock",
+                "Clay"
+            ],
+            "flow_rates": {
+                "Sand": 5,
+                "Rock": 3,
+                "Clay": 2
+            },
+            "water_source_capacity": 1000
+        },
+        "questions": [
+            {
+                "question_id": "Q1",
+                "text": "Which terrain allows the fastest water flow?",
+                "expected_answer": "Sand"
+            },
+            {
+                "question_id": "Q2",
+                "text": "How much water can flow through Clay terrain in 10 hours?",
+                "expected_answer": 20
+            }
+        ]
+    }
+]
